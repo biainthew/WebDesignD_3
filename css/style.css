@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Orbit', sans-serif;
+    color: #333;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+img {
+    width: 100%;
+    display: block;
+}
+button {
+    cursor: pointer;
+}
+.d-flex {
+    display: flex;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+#header {
+    width: 200px;
+    height: 850px;
+}
+#slide {
+    width: 100%;
+    height: 400px;
+    /* background: #888; */
+}
+#banner {
+    width: 100%;
+    height: 200px;
+    /* background: #777; */
+}
+#content {
+    width: 100%;
+    height: 250px;
+    /* background: #666; */
+}
+#footer {
+    width: 100%;
+    height: 120px;
+    /* background: #555; */
+}
+.header {
+    background: #E2F5FF
+}
+.header-logo {
+    text-align: center;
+    border-bottom: 1px solid #fff;
+}
+.header-logo a{
+    font-size: 44px;
+    padding: 10px 0;
+}
+.header-logo a span {
+    color: #008FB7;
+}
+
+.header-nav {
+    margin-top: 20px;
+    text-align: center;
+}
+.header-nav ul{
+}
+.header-nav ul li{
+    position: relative;
+}
+.header-nav ul li a{
+    padding: 6px 0;
+}
+.header-nav ul li a.on{
+    background: #008FB7;
+    color:#fff
+}
+.header-nav ul li a:hover{
+    background: #008FB7;
+    color:#fff
+}
+.header-nav >ul{}
+.header-nav >ul >li{}
+.header-nav >ul >li >a{
+    font-size: 18px;
+}
+.header-nav >ul >li >ul{
+    position: absolute;
+    z-index: 997;
+    top: 0;
+    left: 100%;
+    display: flex;
+    width: 200%;
+    height: 100%;
+}
+.header-nav >ul >li >ul >li{
+    width: 100px;
+}
+.header-nav >ul >li >ul >li >a{
+    font-size: 17px;
+}
+
+.header-spot {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+.header-spot ul {
+    gap: 10px;
+}
+.header-spot ul li a {
+    text-decoration: underline;
+}
+
+.slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.slide>ul{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.slide>ul>li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slide>ul>li>span{
+    background: #E2F5FF;
+    color: #008FB7;
+    font-size: 32px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.slide-go {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 332px;
+}
+.slide-go ul {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 4px #555;
+    background: #E2F5FF;
+}
+.slide-go ul li {
+    position: relative;
+    border-left: 2px solid #008FB7;
+    border-bottom: 2px solid #008FB7;
+    padding: 10px;
+}
+.slide-go ul li span {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #E2F5FF;
+    color: #008FB7;
+    font-weight: bold;
+}
+
+.banner {
+    padding: 30px;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    align-items: center;
+    justify-content: space-between;
+}
+.banner .img-wrap {
+    overflow: hidden;
+    width: 20%;
+    height: 100%;
+}
+.banner .img-wrap img{
+    width: 100%;
+}
+.banner .banner-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.banner div b{
+    font-size: 18px;
+}
+.banner div p{
+    font-size: 17px;
+}
+.banner span{
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.content {
+    padding: 10px;
+}
+.content .content-title{
+    border-bottom: 1px solid #f7f7f7;
+}
+.content .content-title div{
+    padding: 10px 14px;
+    margin-bottom: -1px;
+    background: #f7f7f7;
+    cursor: pointer;
+}
+.content .content-title div.on{
+    background: #008FB7;
+    color: #fff;
+    margin-bottom: 0px;
+}
+.content1 {
+    gap: 10px;
+    padding: 17px 8px 17px 8px;
+    border: 1px solid #f7f7f7;
+    border-top: none;
+}
+.content1 .row{
+    gap: 50px;
+    justify-content: space-between;
+}
+.content1 .row p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content1 .row p:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+.content1 .row span{
+    color: #888;
+}
+.content2 {
+    padding: 10px 16px;
+    border: 1px solid #f7f7f7;
+    border-top: none;
+    height: 195px;
+    display: none;
+}
+.content2 ul{
+    justify-content: space-between;
+    height: 100%;
+}
+.content2 ul li{
+    flex-basis: 32%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.content2 ul li img{
+    width: 120%;
+}
+
+.footer {
+    background: #f7f7f7;
+    align-items: center;
+}
+.footer .footer-logo{
+    width: 200px;
+    text-align: center;
+    border-right: 1px solid #ddd;
+    height: 120px;
+    line-height: 120px;
+}
+.footer .footer-logo a {
+    font-size: 44px;
+    color: #888;
+}
+.footer-content {
+    height: 100%;
+}
+.footer-content >div {
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+}
+.footer-menu {}
+.footer-menu ul{}
+.footer-menu ul li{
+    position: relative;
+}
+.footer-menu ul li:not(:last-child):after{
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 0;
+    width: 1px;
+    height: 20px;
+    background: #949494;
+}
+.footer-menu ul li a{
+    padding: 8px 12px;
+    color: #888;
+}
+.footer-copy {
+    padding-left: 12px;
+    border-top: 1px solid #ddd;
+    width: calc(100vw - 200px);
+    color: #888;
+}
+
+.bg-nav {
+    background: #e2f5ffc2;
+    width: calc(100% - 200px);
+    height: 192px;
+    position: absolute;
+    top: 86px;
+    left: 200px;
+    z-index: 996;
+}
+
+.modal {
+    width: 20%;
+    background: #fff;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 8px;
+    box-shadow: 0 0 4px #888;
+    padding: 10px;
+    z-index: 999;
+    transition: .3s;
+}
+.modal-title {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.modal-content {
+    height: 300px;
+    line-height: 300px;
+    text-align: center;
+}
+.modal-footer {
+    text-align: center;
+}
+.btn-close {
+    border: 1px solid #ddd;
+    padding: 8px 16px;
+    background: #fff;
+    border-radius: 4px;
+}
+.bg {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .3);
+    top: 0;
+    left: 0;
+    z-index: 998;
+}
